@@ -1,0 +1,22 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html">
+<head>
+
+<title>Pagina de Login</title>
+
+<h:body>
+	<center>
+		<h:form>
+			<h:panelGrid>
+				<h:outputLabel value="Usuário: " />
+				<h:inputText value="#{loginBean.usuario}" />
+				<h:outputLabel value="Senha: " />
+				<h:inputSecret value="#{loginBean.senha}" />
+				<h:commandButton value="Entrar" action="#{loginBean.ValidaLogin()}" />
+			</h:panelGrid>
+		</h:form>
+		<h:outputText value="#{loginBean.mensagem}" />
+	</center>
+</h:body>
+</head>
+</html>
