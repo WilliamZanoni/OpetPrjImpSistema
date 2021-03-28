@@ -19,7 +19,7 @@ public class Login {
 				return "/loginErrado.xhtml";
 			}
 		} else {
-			return "/mensagemErro.xhtml";
+			return "/loginErrado.xhtml";
 		}
 	}
 
